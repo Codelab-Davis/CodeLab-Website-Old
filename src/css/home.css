@@ -4,19 +4,11 @@
     line-height: 36px;
 }
 
-.homesub {
-  position: absolute;
-  width: 686px;
-  height: 118px;
-  left: 377px;
-  top: 853px;
+.subtext {
   font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 36px;
-  align-items: center;
-  color: #000000;
+  text-align: center;
 }
 
 .homeimg {
@@ -57,4 +49,98 @@
   line-height: 36px;
 
   color: #000000;
+}
+
+.tagtext {
+  font-family: Poppins;
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 250px;
+  color: #000000;
+}
+
+.pastWorkCard {
+  width: 333px;
+  height: 304px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
+
+.pastWorkCard-logo {
+  width: 265px;
+  height: 53px;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 50px;
+
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.pastWorkCard-companyName {
+  width: 277px;
+  height: 43px;
+  font-family: Poppins;
+  font-size: 24px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.pastWorkCard-description {
+  width: 277px;
+  height: 76px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.homebox {
+
+  display: inline-block;
+  width: 360px;
+  height: 300px;
+  padding-top: 100px;
+  background: #C4C4C4;
+}
+
+.longbox {
+  
+  display: inline-block;
+  width: 900px;
+  height: 300px;
+  padding-top: 100px;
+  background: #D3D3D3;
+
+}
+
+.vtbox {
+
+  display: inline-block;
+  width: 500px;
+  height: 640px;
+  padding-top: 100px;
+  background: #D3D3D3;
+  
+}
+
+.buttonUi {
+  background-color: rgb(0,128,0); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }

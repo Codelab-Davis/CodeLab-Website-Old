@@ -1,10 +1,11 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import styles from "../../css/home.css"
 import img from "./logo.svg"
+import PastWorkCard from "../projects/pastWorkCard.js";
 
 
-function home(props) {
+function home(props) { 
     return (
         <div>
         <br></br>
@@ -46,16 +47,71 @@ function home(props) {
                     </p>
                 </div>
             </Grid>
+            <br></br>
+            <br></br>
             <Grid container item>
                 <Grid container item xs={6}>
-                    <img src="https://png.pngitem.com/pimgs/s/205-2054666_black-transparent-rectangle-png-png-download.png" className=  "./homeimg"/>
-                    <img src="https://png.pngitem.com/pimgs/s/205-2054666_black-transparent-rectangle-png-png-download.png" className = "./homesimg" />
+                    <div className=  "longbox"/>
+                    <br></br>
+                    <div className=  "longbox"/>
                 </Grid>
-                <Grid contanier item xs={6}>
-                    <img src="https://www.shareicon.net/data/512x512/2015/11/30/680302_vertical_512x512.png" className="./mainimg" />
+                <Grid container item xs ={1}/>
+                <Grid contanier item xs={5}>
+                    <div className= "vtbox"/>
                 </Grid>
             </Grid>
-        </div>
+
+            <Grid item>
+            <div>
+                <p className="tagtext"> <b>Our Projects</b></p>
+
+            <Grid item container xs={12}>
+                <p className="subtext">  Here are some of the projects we have worked on in the past. </p>
+            </Grid>
+            </div>
+
+            <Grid item>
+                <div>
+                    <br></br>
+                    <Grid container>
+                    <Grid container iem xs={4}>
+                    <PastWorkCard 
+                        logo = "logo"
+                        companyName= "Company Name" 
+                        projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat sagittis integer placerat quis metus, nisl, tellus. Sed diam et massa ante id egestas nunc lacus."
+                    />    
+                    </Grid>
+                    <Grid container item xs={3}>
+                    <div className = "homebox"/>
+                    </Grid>
+                    <Grid container item xs={1}/>
+                    <Grid container item xs={3}>
+                    <div className = "homebox"/>
+                    </Grid>
+                    </Grid>
+                </div>
+
+                <Grid item>
+                <div>
+                <p className="tagtext"> <b>Join Us! </b></p>
+                <br></br>
+                <Grid item container xs={12}>
+                    <p className="subtext">  We recruit twice a year, once in fall quarter and once in spring quarter. </p>
+                </Grid>
+                <br></br>
+                <Grid container>
+                <Button className= "buttonUi" 
+                 background-color= "rgb(0,128,0)" 
+                 href="/about"> Learn More
+                </Button>
+                </Grid>
+                </div>
+                </Grid>
+            </Grid>
+        </Grid>
+    </div>
+
+
     )
 }
 
