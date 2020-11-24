@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Button } from "@material-ui/core";
+import { Grid, Link } from "@material-ui/core";
 import styles from "../../css/home.css"
 import img from "./logo.svg"
 import PastWorkCard from "../projects/pastWorkCard.js";
@@ -11,8 +11,8 @@ function home(props) {
         <br></br>
         <br></br>
         <Grid container> 
-            <Grid container item xs={2}/>
-            <Grid container item xs={3}>
+            <Grid container item xs={0} md={2}/>
+            <Grid container item xs={12} md={3}>
                 <img class="imagestyle" src={img}/>
                 <label class="toptext">
                 <br></br>
@@ -23,7 +23,7 @@ function home(props) {
                 </h>
                 </label>
             </Grid>
-            <Grid container item xs={3} />
+            <Grid container item xs={12} md={3} />
                 <Grid container item xs={3}>
                     <Grid item>
                         <label>
@@ -50,13 +50,12 @@ function home(props) {
             <br></br>
             <br></br>
             <Grid container item>
-                <Grid container item xs={6}>
+                <Grid container item xs={12} md={6}>
                     <div className=  "longbox"/>
                     <br></br>
                     <div className=  "longbox"/>
                 </Grid>
-                <Grid container item xs ={1}/>
-                <Grid contanier item xs={5}>
+                <Grid contanier item xs={12} md={6}>
                     <div className= "vtbox"/>
                 </Grid>
             </Grid>
@@ -82,36 +81,33 @@ function home(props) {
                     />    
                     </Grid>
                     <Grid container item xs={3}>
-                    <div className = "homebox"/>
+                        <div className = "homebox"/>
                     </Grid>
                     <Grid container item xs={1}/>
-                    <Grid container item xs={3}>
-                    <div className = "homebox"/>
-                    </Grid>
+                        <Grid container item xs={3}>
+                            <div className = "homebox"/>
+                        </Grid>
                     </Grid>
                 </div>
 
                 <Grid item>
-                <div>
-                <p className="tagtext"> <b>Join Us! </b></p>
-                <br></br>
-                <Grid item container xs={12}>
-                    <p className="subtext">  We recruit twice a year, once in fall quarter and once in spring quarter. </p>
-                </Grid>
-                <br></br>
-                <Grid container>
-                <Button className= "buttonUi" 
-                 background-color= "rgb(0,128,0)" 
-                 href="/about"> Learn More
-                </Button>
-                </Grid>
-                </div>
+                    <div>
+                        <p className="tagtext"> <b>Join Us! </b></p>
+                        <br></br>
+                        <Grid item container xs={12}>
+                            <p className="subtext">  We recruit twice a year, once in fall quarter and once in spring quarter. </p>
+                        </Grid>
+                        <br></br>
+                        <div class="applybutton">
+                            <Link class="text" href="/contactus">
+                                <body1 class="buttonui">Apply Here</body1>
+                            </Link>
+                        </div>
+                    </div>
                 </Grid>
             </Grid>
         </Grid>
     </div>
-
-
     )
 }
 
