@@ -4,6 +4,12 @@ import PastWorkCard from "./pastWorkCard";
 import { Grid } from "@material-ui/core";
 import ambiilogo from "./Ambii-Logo.png";
 import codelablogo from "./LogoIcon.png";
+import refocusai from "./refocusai.png";
+import familyproud from "./familyproud.png";
+import handstogether from "./handstogether.png";
+import aggieexplorer from "./aggieexplorer.png";
+
+// re-trigger vercel autodeploy test 
 
 function projects(props) {
     return (
@@ -45,7 +51,39 @@ function projects(props) {
             </Grid>
 
             <Grid container spacing={3}>
+            <Grid container item xs={0} md={1}></Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={refocusai} 
+                        companyName="ReFocus AI" 
+                        projectDescription="Created a system to link and convert data between databases for ReFocus AI, offering AI sales enablement for sales professionals. Also created several ML models to predict data growth."
+                    />
+                </Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={familyproud} 
+                        companyName="Family Proud" 
+                        projectDescription="Worked alongside Family Proud, a platform simplifying the process of giving and receiving support for families, assisting in the creation of their web and mobile apps and backend."
+                    />
+                </Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={handstogether} 
+                        companyName="Hands Together" 
+                        projectDescription="Created a website with a shop, checkout, and dashboard system for Hands Together, a non-profit promoting academic excellence among preschoolers."
+                        projectLink="https://www.handstogether-sa.org/"
+                    />
+                </Grid>
+                <Grid container item xs={0} md={2}></Grid>
                 <Grid container item xs={0} md={1}></Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={aggieexplorer} 
+                        companyName="AggieExplorer" 
+                        projectDescription="Built a website for UC Davis students to view grade distributions on a per course basis and analyze course fill-up times."
+                        projectLink="https://www.aggieexplorer.com/"
+                    />
+                </Grid>
                 <Grid container item xs={12} sm={6} md={3}>
                     <PastWorkCard 
                         logo={ambiilogo} 
@@ -54,7 +92,6 @@ function projects(props) {
                         projectLink="https://codelabdavis.medium.com/ambii-internal-ui-fall-20-client-project-2385a0d99ced"
                     />
                 </Grid>
-
                 <Grid container item xs={12} sm={6} md={3}>
                     <PastWorkCard 
                         logo={codelablogo}
@@ -63,6 +100,7 @@ function projects(props) {
                         projectLink="https://codelabdavis.medium.com/codelab-website-fall-20-mentored-project-d5559c54743f"
                     />
                 </Grid>
+                <Grid container item xs={1}></Grid>
             </Grid>
         </div>
     )

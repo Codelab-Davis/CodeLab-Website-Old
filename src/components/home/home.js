@@ -5,10 +5,14 @@ import logo from "./logo.svg"
 import PastWorkCard from "../projects/pastWorkCard.js";
 import ambiilogo from "./ambiiLogo.png";
 import Homepg from "./HomepageGraphic.png";
-import left from "./left.png";
+import left from "./WSQ21GroupPhoto.jpg";
 import bottom from "./bottomright.png";
 import topright from "./topright.png";
 import codelablogo from "./codelabLogo.png";
+import refocusai from "./refocusai.png";
+import familyproud from "./familyproud.png";
+import handstogether from "./handstogether.png";
+import aggieexplorer from "./aggieexplorer.png"; 
 
 function home(props) { 
     return (
@@ -47,15 +51,8 @@ function home(props) {
 
             <Grid container style={{marginTop: "3rem"}}>
                 <Grid container item xs={1} />        
-                <Grid container item xs={10} md={5}>
-                    <img className="leftimage" src={left} alt="All Team Meeting" style={{marginRight: "1rem"}}/>
-                </Grid>
-                <Grid container item xs={1} md={true}/>
-                <Grid container item xs={1} md={true} />
-                <Grid contanier item xs={10} md={5}>
-                        <img className="rightimage1" alt="Whole Club Meeting" src={topright} style={{marginBottom: "1rem"}}/>
-                        <br></br>
-                        <img className="rightimage2" alt="Board Meeting" src={bottom}/>
+                <Grid container item xs={10}>
+                    <img style={{width: "100%", height: "auto"}} src={left} alt="All Team Meeting"/>
                 </Grid>
                 <Grid container item xs={1} />
             </Grid>
@@ -71,6 +68,38 @@ function home(props) {
 
             <Grid container justify="flex-start" spacing={3}>
                 <Grid container item xs={0} md={1}></Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={refocusai} 
+                        companyName="ReFocus AI" 
+                        projectDescription="Created a system to link and convert data between databases for ReFocus AI, offering AI sales enablement for sales professionals. Also created several ML models to predict data growth."
+                    />
+                </Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={familyproud} 
+                        companyName="Family Proud" 
+                        projectDescription="Worked alongside Family Proud, a platform simplifying the process of giving and receiving support for families, assisting in the creation of their web and mobile apps and backend."
+                    />
+                </Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={handstogether} 
+                        companyName="Hands Together" 
+                        projectDescription="Created a website with a shop, checkout, and dashboard system for Hands Together, a non-profit promoting academic excellence among preschoolers."
+                        projectLink="https://www.handstogether-sa.org/"
+                    />
+                </Grid>
+                <Grid container item xs={0} md={2}></Grid>
+                <Grid container item xs={0} md={1}></Grid>
+                <Grid container item xs={12} sm={6} md={3}>
+                    <PastWorkCard 
+                        logo={aggieexplorer} 
+                        companyName="AggieExplorer" 
+                        projectDescription="Built a website for UC Davis students to view grade distributions on a per course basis and analyze course fill-up times."
+                        projectLink="https://www.aggieexplorer.com/"
+                    />
+                </Grid>
                 <Grid container item xs={12} sm={6} md={3}>
                     <PastWorkCard 
                         logo={ambiilogo} 
